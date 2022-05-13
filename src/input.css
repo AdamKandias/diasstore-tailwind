@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
+
+@layer base{
+    body{
+        @apply font-rubik
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-poppins
+    }
+}
+
+@layer components{
+    .size-selector input:checked + label{
+        @apply bg-primary text-white;
+    }
+}
+
+@layer components{
+    .color-selector input:checked + label{
+        @apply border-2 border-primary;
+    }
+}
